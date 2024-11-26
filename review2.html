@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Reviews</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --maincolor:#2ec8a6;
+    --secondcolor:#f8a803;
+    --thirdcolor:#f4ab01;
+    --textcolor:#4A5764;
+
+
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.feedback-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.feedback-section h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--maincolor);
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feedback-card {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: gold;
+}
+
+.feedback-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  margin: 15px 0;
+  text-align: left;
+}
+.feedback-card h3 {
+  font-size: 1rem;
+  color: #555;
+  text-align: right;
+  margin: 0;
+}
+
+
+  </style>
+</head>
+<body>
+  <section class="feedback-section">
+    <h1>Patient Reviews</h1>
+    <div class="feedback-container">
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>Professional and compassionate care with noticable results. Highly recommend!</p>
+        <h3>- Anju</h3>
+      </div>
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>A holistic approach that made a real difference in my well-being. Amazing experience!</p>
+        <h3> -Seema</h3>
+      </div>
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>My chronic issues have significantly improved. Felt healthier and balanced after every visit!</p>
+        <h3>- Rajnish</h3>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --maincolor:#2ec8a6;
+    --secondcolor:#f8a803;
+    --thirdcolor:#f4ab01;
+    --textcolor:#4A5764;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: "Inter", sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.our-services{
+    width: 100%;
+    padding: 3rem 7%;
+
+}
+.service-heading h2{
+    font-size: 40px;
+    color: #2ec8a6;
+    text-align: center;
+    padding: 1rem 0;
+}
+.main-services{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    text-align: center;
+
+}
+.inner-services{
+    flex: 1 1 300px;
+    cursor: pointer;
+    padding: 0.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.inner-services:hover{
+    transform: translateY(-10px);
+    border-bottom: 2px splid var(--maincolor);
+}
+.inner-services:hover .service-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    background-color: var(--maincolor);
+    color: var(--secondcolor);
+
+
+}
+.inner-services:hover .service-icon i{
+    color: white;
+    transform: scale(1.1);
+}
+.service-icon{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid var(--secondcolor);
+}
+.service-icon i{
+    font-size: 3rem;
+    color: var(--maincolor);
+    padding: 1rem;
+
+}
+.inner-services h3{
+    font-size: 2rem;
+    padding: 0.5 rem 0;
+}
+.inner-services p{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    line-height: 2.5rem;
+}
+    </style>
+</head>
+<body>
+    <div class="our-services">
+        <div class="service-heading">
+            <h2>Our Services</h2>
+        </div>
+        <div class="main-services">
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="fi fi-rs-treatment"></i>
+                </div>
+                    <h3>Acute and Chronic illness treatment</h3>
+                    <p>Treatment for acute and chronic illnesses such as cold, flu, food poisining, migraine, asthma.</p>
+                </div>
+
+                <div class="inner-services">
+                    <div class="service-icon">
+                        <i class="fi fi-rs-salad"></i>
+                    </div>
+                        <h3>Lifestyle and Nutritional Guidance</h3>
+                        <p>Providing dietary and lifestyle advice that complements homoepathic treatment, aimimg for holistic well-being.</p>
+                    </div>
+
+                    <div class="inner-services">
+                        <div class="service-icon">
+                            <i class="fi fi-tr-heart-brain"></i>
+                        </div>
+                            <h3>Children's Health and Development Programs</h3>
+                            <p>Specialized treatments for childhood conditions such as teething, colic, behavioral issues and immune support.</p>
+                        </div>
+                        <div class="inner-services">
+                            <div class="service-icon">
+                                <i class="fi fi-tr-wheat-slash"></i>
+                            </div>
+                                <h3>Allergy Testing and Treatment</h3>
+                                <p>Identifying and treating allergies or sensitivities through homoepathy and lifestyle adjustments.</p>
+                            </div>
+                            <div class="inner-services">
+                                <div class="service-icon">
+                                    <i class="fi fi-rr-hospital-user"></i>
+                                
+                                    
+                                </div>
+                                    <h3>Detoxification Programs</h3>
+                                    <p>Personalized detox programs to help clear toxins and improve energy, digestion and skin health.</p>
+                                </div>
+                                <div class="inner-services">
+                                    <div class="service-icon">
+                                        <i class="fi fi-rs-venus"></i>  
+                                        
+                                    </div>
+                                        <h3>Women's Health Services</h3>
+                                        <p>Treatments for menstrual disorders, menopause, menstrual cramps, tailored to female patients.</p>
+                                   </div>
+        
+    
+</body>
+</html>

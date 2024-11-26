@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Website</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-chubby/css/uicons-regular-chubby.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --maincolor:#2ec8a6;
+    --secondcolor:#f8a803;
+    --thirdcolor:#f4ab01;
+    --textcolor:#4A5764;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: "Inter", sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 1000;
+    background-color: white;
+}
+
+.logo{
+    width: 150px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.navbar a{
+    color: var(--textcolor);
+    font-size: 1.7rem;
+    margin: 1rem;
+    position: relative;
+    transition: 0.5s;
+}
+
+.navbar a:hover{
+    color: var(--maincolor);
+}
+
+.navbar a::after{
+    content: "";
+    background-color: var(--maincolor);
+    width: 0;
+    position: absolute;
+    height: 0.2rem;
+    left: 0;
+    margin-top: 0.5rem;
+    top: 100%;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+#menu-bars{
+    color: var(--textcolor);
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    display: none;
+}
+
+#menu-bars:hover{
+    color: var(--maincolor);
+}
+
+
+.main-home{
+    padding: 2rem 7%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/023/417/426/original/medical-infographic-banner-background-clinic-pharmacy-laboratory-test-and-research-healthcare-concept-backdrop-illustration-vector.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+    }
+.home.home-left-content{
+    flex: 1 1 35rem;
+}
+.home-left-content h1{
+    font-size: 1.7 rem;
+    padding: 1rem;
+    font-weight: bolder;
+    color: red;
+}
+.home-left-content h2{
+    font-size: 35px;
+    margin: 1rem 0;
+}
+.home-btn{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.home-btn a{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background-color: var(--maincolor);
+    font-size: 1.7rem;
+    color: white;
+    transition: 0.5s ease;
+}
+.home-btn a:hover{
+    padding: 1.5rem 2.5rem;
+}
+
+.homebtnsec{
+    background: transparent !important;
+    color: var(--textcolor) !important;
+    border: 1px solid var(--maincolor);
+}
+.home.home-right-content{
+    flex: 1 1 50rem;
+}
+.home.home-right-content img{
+    width: 100%;
+
+
+}
+.technology{
+    padding: 2rem 7%;
+}
+.main-technology{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: -10px;
+}
+.inner-technology{
+    flex: 1 1 300px;
+    padding: 3rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image: url(https://i.pinimg.com/474x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3--white-texture-wordpress-theme.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.inner-technology:hover{
+    background: var(--maincolor);
+}
+.inner-technology:hover i{
+    color: white;
+}
+.inner-technology:hover h2{
+    color: white;
+}
+.inner-technology:hover p{
+    color: white;
+}
+
+.inner-technology i{
+    font-size: 48px;
+    color: var(--maincolor);
+}
+.inner-technology h2{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+
+}
+.inner-technology p{
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+footer {
+  background-color: rgb(151, 212, 151);
+  padding: 20px 0;
+  width: 120%;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h4{
+    color: black;
+}
+
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+p:hover{
+    color: white;
+}
+
+.footer-bottom {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+       
+        <div class="logo">  <h1>Thukral Clinic</h1><img src="https://static.vecteezy.com/system/resources/previews/000/509/347/large_2x/logo-for-a-cardio-clinic-vector-illustration.jpg" alt="">
+           
+        </div>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="review2.html">Reviews</a>
+            <a href="findus.html">Find Us</a>
+        </nav>
+        
+    </header>
+
+    <div class="main-home">
+        <div class="home">
+            <div class="home-left-content">
+                <h1>Welcome to Our Clinic</h1>
+                <h2><b>We take care of our<br>Patient's Health</b></h2>
+                <div class="home-btn">
+                    <a class="homebtnsec" href="appointment.html">Book Appointment</a>
+                </div>
+        
+            </div>
+
+            <div class="home-right-content">
+                <img src="about.jpg.jpeg">
+            </div>
+        </div>
+    </div>
+    <div class="technology">
+        <div class="main-technology">
+            <div class="inner-technology">
+                <i class="fi fi-rr-hands-heart"></i>
+                <h2>Quality and Safety</h2>
+                <p>Deliving personalized, safe and high-quality care with unwavering dedication to each patient's well-being.</p>
+                </div>
+            <div class="inner-technology">
+                <i class="fi fi-rr-stethoscope"></i>
+                <h2>Free Counseling</h2>
+                <p>Offering compassionate, free counseling to supoort your mental and emotional well-being in a safe, one-on-one-setting.</p>
+            </div>
+            <div class="inner-technology">
+                <i class="fi fi-rr-ribbon"></i>
+                <h2>Awareness</h2>
+                <p>Raising awareness on narcotics and drugs to promote safe choices and prevent addiction for a healthier community.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Quick links</h4>
+                <p><a href="home.html">Home</a><br>
+                <a href="about.html">About</a><br>
+                <a href="services.html">Services</a><br>
+                <a href="">Find Us</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Clinic Hours</h4>
+                <p>Monday - Friday: 10:00 AM - 9:00 PM</p>
+                 <p>Saturday & Sunday: 11:00 AM - 7:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fi fi-rc-phone-call"></i>: +91 90415-15100</p>
+                <p><i class="fi fi-rr-envelope"></i>: drthukral02@gmail.com</p>
+                <p><i class="fi fi-rs-marker"></i>: Jattpura,Kapurthala-144601.Punjab,India</p>
+                                            
+            </div>
+        </div>
+        <div class="footer-bottom">
+             <p>© 2024 Thukral Clinic | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+                                      
+    
+</body>
+</html>
